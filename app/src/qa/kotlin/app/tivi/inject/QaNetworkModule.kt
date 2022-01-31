@@ -35,7 +35,7 @@ object QaNetworkModule {
     @Singleton
     @IntoSet
     fun provideHttpLoggingInterceptor(): Interceptor = HttpLoggingInterceptor().apply {
-        level = HttpLoggingInterceptor.Level.BASIC
+        level = HttpLoggingInterceptor.Level.BODY
     }
 
     @Provides
